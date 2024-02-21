@@ -1,0 +1,171 @@
+<!-- Add a button to open the main modal -->
+<button class="btn btn-primary" (click)="openPopupTable()">Open Popup</button>
+
+<!-- The ng-template for the main popup table -->
+<ng-template #popupTable let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
+      <h4 class="modal-title">Event Log - Voyage</h4>
+    </div>
+    
+    <div class="btn btn-icon btn-sm btn-light-primary btn-active-primary ms-2 cursor-pointer" (click)="d('Cross click')">
+      <i class="bi bi-x fs-1"></i>
+    </div>
+  </div>
+
+  <!-- Add the rest of your main popup content here -->
+  <!-- For example, you can place your table inside the modal body -->
+  <div class="modal-body">
+    <div id="table-contents" class="table-responsive">
+      <!-- Your main table content -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th><input class="check-box" type="checkbox"></th>
+            <th>Voyage ID</th>
+            <th>Date/Time</th>
+            <th>Voyage Info</th>
+            <th>Voyage Stage</th>
+            <th>Events</th>
+            <th>TIME ELAPSED</th>
+            <th>Distance</th>
+            <th>Fuel Consumption</th>
+            <th>ROB</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input class="check-box" type="checkbox"></td>
+            <td>12345A</td>
+            <td>Jan 28, 2024</td>
+            <td>FIKTK</td>
+            <td>Ballast</td>
+            <td>Departure</td>
+            <td>Jan 28, 2024</td>
+            <td>9022.5</td>
+            <td>1982.7</td>
+            <td>1982.7</td>
+            <td>
+              <button class="btn btn-link" (click)="openEditPopup()"> <!-- Add the button for the second popup -->
+                <i class="bi bi-plus-circle"></i> Add/Edit Details
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><input class="check-box" type="checkbox"></td>
+            <td>12345A</td>
+            <td>Jan 28, 2024</td>
+            <td>FIKTK</td>
+            <td>Ballast</td>
+            <td>Departure</td>
+            <td>Jan 28, 2024</td>
+            <td>9022.5</td>
+            <td>1982.7</td>
+            <td>1982.7</td>
+            <td>
+              <button class="btn btn-link" (click)="openEditPopup()"> <!-- Add the button for the second popup -->
+                <i class="bi bi-plus-circle"></i> Add/Edit Details
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><input class="check-box" type="checkbox"></td>
+            <td>12345A</td>
+            <td>Jan 28, 2024</td>
+            <td>FIKTK</td>
+            <td>Ballast</td>
+            <td>Departure</td>
+            <td>Jan 28, 2024</td>
+            <td>9022.5</td>
+            <td>1982.7</td>
+            <td>1982.7</td>
+            <td>
+              <button class="btn btn-link" (click)="openEditPopup()"> <!-- Add the button for the second popup -->
+                <i class="bi bi-plus-circle"></i> Add/Edit Details
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><input class="check-box" type="checkbox"></td>
+            <td>12345A</td>
+            <td>Jan 28, 2024</td>
+            <td>FIKTK</td>
+            <td>Ballast</td>
+            <td>Departure</td>
+            <td>Jan 28, 2024</td>
+            <td>9022.5</td>
+            <td>1982.7</td>
+            <td>1982.7</td>
+            <td>
+              <button class="btn btn-link" (click)="openEditPopup()"> <!-- Add the button for the second popup -->
+                <i class="bi bi-plus-circle"></i> Add/Edit Details
+              </button>
+            </td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-template>
+
+<!-- The ng-template for the second popup -->
+<!-- The ng-template for the second popup -->
+<!-- The ng-template for the second popup -->
+<ng-template #editPopupTemplate  let-c="close" let-d="dismiss">
+  <div class="second-popup-container"> <!-- Add a container div for the second popup -->
+    <div class="modal-header">
+      <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
+        <h4 class="modal-title">Add/Edit Details</h4>
+      </div>
+
+      <div class="btn btn-icon btn-sm btn-light-primary btn-active-primary ms-2 cursor-pointer" (click)="d('Cross click')">
+        <i class="bi bi-x fs-1"></i>
+      </div>
+    </div>
+
+    <!-- Add the content for the second popup -->
+    <div class="modal-body">
+      <!-- Example of table with input fields for editing -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th><input class="check-box" type="checkbox"></th>
+            <th>Voyage ID</th>
+            <th>Date/Time</th>
+            <th>Voyage Info</th>
+            <th>Voyage Stage</th>
+            <th>Events</th>
+            <th>TIME ELAPSED</th>
+            <th>Distance</th>
+            <th>Fuel Consumption</th>
+            <th>ROB</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input class="check-box" type="checkbox"></td>
+            <td><input type="text" [(ngModel)]="field1Value"></td>
+            <td><input type="text" [(ngModel)]="field2Value"></td>
+            <td><input type="text" [(ngModel)]="field3Value"></td>
+            <td><input type="text" [(ngModel)]="field4Value"></td>
+            <td><input type="text" [(ngModel)]="field5Value"></td>
+            <td><input type="text" [(ngModel)]="field6Value"></td>
+            <td><input type="text" [(ngModel)]="field7Value"></td>
+            <td><input type="text" [(ngModel)]="field8Value"></td>
+            <td><input type="text" [(ngModel)]="field9Value"></td>
+            <td>
+              <button class="btn btn-link" (click)="saveDetails()"> <!-- Change to Save Details button -->
+                <i class="bi bi-check-circle"></i> Save Details
+              </button>
+            </td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-template>
+

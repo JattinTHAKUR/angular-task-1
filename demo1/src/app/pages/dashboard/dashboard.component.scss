@@ -1,0 +1,140 @@
+:host {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    margin: 10px;
+}
+
+
+#container {
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px 5px;
+    padding: 5px;
+}
+
+h1 {
+    text-align: left;
+}
+
+#buttons {
+    text-align: left;
+    /* margin-bottom: 20px; */
+}
+
+.btn-one,
+.btn-two,
+.btn-three {
+    
+    background-color: #F9F9F9;
+    color: rgb(58, 58, 58);;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: background-color 0.3s;
+}
+
+/* .btn-one.active,  008080
+.btn-two.active,
+.btn-three.active {
+    background-color: #F9F9F9;
+    color: rgb(88, 88, 88);
+    font-weight: 500;
+} */
+
+
+.btn-active {
+    padding: 12px 20px;
+    background-color: #008080;
+    border: none;
+    border-radius: 0px;
+    color : white;
+    cursor: pointer;
+}
+
+.btn-inactive {
+    padding: 12px 20px;
+    background-color: #F9F9F9;
+    border: none;
+    border-radius: 0px;
+    color : rgb(58, 58, 58);
+    cursor: pointer;
+}
+
+.btn-inactive:hover{
+background-color: #008080;
+color: white;
+
+}
+
+
+.btn-inactive i {
+    color: rgb(148, 148, 13);
+}
+
+
+.carrier-heading {
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+th,
+td {
+    /* border: 1px solid #ddd; */
+    padding: 10px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+th {
+    background-color: #f2f2f2;
+    /* border-radius: ; */
+}
+
+
+#submit-button {
+    margin-top: 50px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+#submit-button button {
+    background-color: #008080;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: background-color 0.3s;
+}
+
+/* Add a custom class for the second popup container */
+/* ... (previous styles) ... */
+
+/* Add a custom class for the second popup container */
+.second-popup-container {
+    // max-width: 600px; /* Adjust the maximum width as needed */
+    // margin: auto; /* Center the container horizontally */
+    // border: 1px solid black; /* Add a border */
+    overflow: none; /* Hide horizontal scrollbar */
+    // padding: 10px; /* Add padding for better aesthetics */
+  }
+  
